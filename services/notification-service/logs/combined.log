@@ -1,0 +1,4 @@
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"notification-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:06:05.703Z"}
+{"level":"info","message":"Notification Service running on port 3004","service":"notification-service","timestamp":"2026-03-21T20:06:05.710Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"notification-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:30:09.135Z"}
+{"level":"info","message":"Notification Service running on port 3004","service":"notification-service","timestamp":"2026-03-21T20:30:09.147Z"}

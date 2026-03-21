@@ -1,0 +1,4 @@
+{"level":"error","message":"[PROXY ERROR] GET /api/doctors?page=1&limit=9: ","service":"api-gateway","timestamp":"2026-03-21T20:08:20.305Z"}
+{"level":"error","message":"[PROXY ERROR] GET /api/doctors/specializations: ","service":"api-gateway","timestamp":"2026-03-21T20:08:20.310Z"}
+{"level":"error","message":"[PROXY ERROR] GET /api/doctors?page=1&limit=9: ","service":"api-gateway","timestamp":"2026-03-21T20:08:20.318Z"}
+{"level":"error","message":"[PROXY ERROR] GET /api/doctors/specializations: ","service":"api-gateway","timestamp":"2026-03-21T20:08:20.320Z"}

@@ -1,0 +1,119 @@
+.booking-page {
+  padding: 2rem 0 4rem;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.booking-section {
+  margin-bottom: 1.5rem;
+}
+
+.booking-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-light);
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.75rem;
+}
+
+.slot-btn {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slot-btn:hover {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.slot-btn.selected {
+  background: var(--gradient-primary);
+  border-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.no-slots {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Summary */
+.booking-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.summary-card {
+  padding: 2rem;
+}
+
+.summary-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.summary-label {
+  color: var(--text-muted);
+}
+
+.summary-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 1rem 0;
+}
+
+.summary-total {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.summary-fee {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+}

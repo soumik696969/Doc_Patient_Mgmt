@@ -1,0 +1,16 @@
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:01:10.239Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:01:10.249Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-21T20:01:10.253Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:19:48.236Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:19:48.245Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-21T20:19:48.249Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:20:09.040Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:20:09.049Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-21T20:20:09.051Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-21T20:21:07.155Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:23:32.211Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:23:32.221Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-21T20:24:35.878Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:30:09.900Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:30:09.920Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-21T20:30:09.924Z"}
