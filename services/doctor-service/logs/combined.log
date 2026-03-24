@@ -87,3 +87,6 @@
 {"level":"info","message":"Doctor Service connected to MongoDB","service":"doctor-service","timestamp":"2026-03-21T20:30:09.832Z"}
 {"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"doctor-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:30:09.862Z"}
 {"level":"info","message":"Doctor Service running on port 3002","service":"doctor-service","timestamp":"2026-03-21T20:30:09.866Z"}
+{"level":"info","message":"Doctor Service connected to MongoDB","service":"doctor-service","timestamp":"2026-03-24T14:18:42.041Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"doctor-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-24T14:18:42.068Z"}
+{"level":"info","message":"Doctor Service running on port 3002","service":"doctor-service","timestamp":"2026-03-24T14:18:42.074Z"}

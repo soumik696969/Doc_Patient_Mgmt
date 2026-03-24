@@ -12,11 +12,15 @@ const APPOINTMENT_SERVICE = process.env.APPOINTMENT_SERVICE_URL || 'http://local
 const NOTIFICATION_SERVICE = process.env.NOTIFICATION_SERVICE_URL || 'http://localhost:3004';
 
 // Proxy options factory
-const createProxy = (target, pathRewrite) => {
+const createProxy = (target) => {
   return createProxyMiddleware({
     target,
     changeOrigin: true,
-    pathRewrite,
+    pathRewrite: (path, req) => {
+      // Forward the full original URL to the microservices
+      // e.g. /api/auth/login -> /api/auth/login instead of just /login
+      return req.originalUrl;
+    },
     on: {
       proxyReq: (proxyReq, req) => {
         // Forward user info from JWT
@@ -47,12 +51,12 @@ const createProxy = (target, pathRewrite) => {
 // =============================================
 // AUTH ROUTES (No auth required)
 // =============================================
-router.use('/auth', createProxy(USER_SERVICE, { '^/auth': '/api/auth' }));
+router.use('/auth', createProxy(USER_SERVICE));
 
 // =============================================
 // USER ROUTES (Auth required)
 // =============================================
-router.use('/users', authMiddleware, createProxy(USER_SERVICE, { '^/users': '/api/users' }));
+router.use('/users', authMiddleware, createProxy(USER_SERVICE));
 
 // =============================================
 // DOCTOR ROUTES (Mixed auth)
@@ -68,16 +72,16 @@ router.put('/doctors/:id', authMiddleware, (req, res, next) => next());
 router.patch('/doctors/:id', authMiddleware, (req, res, next) => next());
 router.delete('/doctors/:id', authMiddleware, (req, res, next) => next());
 
-router.use('/doctors', createProxy(DOCTOR_SERVICE, { '^/doctors': '/api/doctors' }));
+router.use('/doctors', createProxy(DOCTOR_SERVICE));
 
 // =============================================
 // APPOINTMENT ROUTES (Auth required)
 // =============================================
-router.use('/appointments', authMiddleware, createProxy(APPOINTMENT_SERVICE, { '^/appointments': '/api/appointments' }));
+router.use('/appointments', authMiddleware, createProxy(APPOINTMENT_SERVICE));
 
 // =============================================
 // NOTIFICATION ROUTES (Auth required)
 // =============================================
-router.use('/notifications', authMiddleware, createProxy(NOTIFICATION_SERVICE, { '^/notifications': '/api/notifications' }));
+router.use('/notifications', authMiddleware, createProxy(NOTIFICATION_SERVICE));
 
 module.exports = router;

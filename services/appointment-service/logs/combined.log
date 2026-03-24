@@ -4,3 +4,9 @@
 {"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-21T20:30:09.898Z"}
 {"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"appointment-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:30:09.915Z"}
 {"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-21T20:30:09.919Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-24T14:19:31.736Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"appointment-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-24T14:19:31.757Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-24T14:19:31.763Z"}
+{"level":"info","message":"Appointment booked: 69c2a208bc4d69b4f51ee3b1","service":"appointment-service","timestamp":"2026-03-24T14:39:04.203Z"}
+{"level":"info","message":"Appointment booked: 69c2a24cbc4d69b4f51ee3ca","service":"appointment-service","timestamp":"2026-03-24T14:40:12.598Z"}
+{"level":"info","message":"Appointment booked: 69c2b3e0bc4d69b4f51ee412","service":"appointment-service","timestamp":"2026-03-24T15:55:12.565Z"}

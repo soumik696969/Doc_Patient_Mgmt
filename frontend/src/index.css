@@ -4,76 +4,77 @@
    =================================== */
 
 :root {
-  /* Primary Palette - Deep Medical Blue/Purple */
-  --primary: #6366f1;
-  --primary-light: #818cf8;
-  --primary-dark: #4f46e5;
-  --primary-glow: rgba(99, 102, 241, 0.3);
+  /* Basic Engineer Colors - Plain Light Mode */
+  --primary: #0066cc;
+  --primary-light: #3385ff;
+  --primary-dark: #004c99;
+  --primary-glow: transparent;
   
   /* Accent Colors */
-  --accent: #06d6a0;
-  --accent-light: #34efc3;
-  --accent-dark: #05b384;
+  --accent: #ff9900;
+  --accent-light: #ffb366;
+  --accent-dark: #cc7a00;
   
   /* Status Colors */
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
-  --info: #3b82f6;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --info: #17a2b8;
   
-  /* Neutral Palette - Dark Mode */
-  --bg-primary: #0a0a1a;
-  --bg-secondary: #111128;
-  --bg-card: #1a1a2e;
-  --bg-card-hover: #222240;
-  --bg-elevated: #16213e;
+  /* Neutral Palette - White and Gray testing theme */
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #e9ecef;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f3f5;
+  --bg-elevated: #ffffff;
   
-  --text-primary: #f0f0f5;
-  --text-secondary: #a0a0c0;
-  --text-muted: #6b6b8d;
+  /* Hard Text Colors */
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #777777;
   
-  --border: rgba(255, 255, 255, 0.08);
-  --border-light: rgba(255, 255, 255, 0.15);
+  --border: #cccccc;
+  --border-light: #dddddd;
   
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-  --gradient-accent: linear-gradient(135deg, #06d6a0 0%, #22d3ee 100%);
-  --gradient-hero: linear-gradient(135deg, #0a0a1a 0%, #16213e 50%, #1a1a2e 100%);
-  --gradient-card: linear-gradient(145deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.4));
+  /* Gradients Removed - Simple solid colors */
+  --gradient-primary: var(--primary);
+  --gradient-accent: var(--accent);
+  --gradient-hero: var(--bg-primary);
+  --gradient-card: var(--bg-card);
   
-  /* Glass Effect */
-  --glass-bg: rgba(26, 26, 46, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  /* Glass Effect Removed */
+  --glass-bg: var(--bg-card);
+  --glass-border: var(--border);
+  --glass-shadow: none;
   
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 30px var(--primary-glow);
+  /* Shadows Removed for basic look */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-glow: none;
   
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
+  /* Standard Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
   
-  /* Border Radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
+  /* Sharp Border Radius */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-full: 0px;
   
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-normal: 250ms ease;
-  --transition-slow: 400ms ease;
+  /* No animations */
+  --transition-fast: 0ms;
+  --transition-normal: 0ms;
+  --transition-slow: 0ms;
   
-  /* Font */
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Basic System Fonts */
+  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -360,10 +361,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: var(--spacing-sm);
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-dark);
 }
 
 .section-subtitle {

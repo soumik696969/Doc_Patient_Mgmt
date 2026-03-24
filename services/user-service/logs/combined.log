@@ -14,3 +14,17 @@
 {"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-21T20:30:09.900Z"}
 {"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-21T20:30:09.920Z"}
 {"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-21T20:30:09.924Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-24T14:17:57.435Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-24T14:17:57.451Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-24T14:17:57.457Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T14:35:22.752Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T14:37:19.539Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T14:39:24.483Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T14:39:50.751Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T14:42:23.903Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T14:42:54.119Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T15:34:39.988Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T15:53:15.946Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T15:55:30.618Z"}
+{"level":"info","message":"User logged in: dr.singh@demo.com","service":"user-service","timestamp":"2026-03-24T15:56:21.839Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T15:57:56.927Z"}

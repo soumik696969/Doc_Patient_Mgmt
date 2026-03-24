@@ -8,9 +8,9 @@
   height: 70px;
   display: flex;
   align-items: center;
-  background: rgba(10, 10, 26, 0.85) !important;
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-container {
@@ -27,7 +27,6 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: var(--text-primary);
 }
 
 .brand-icon {
@@ -36,71 +35,70 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--gradient-primary);
-  border-radius: var(--radius-md);
+  background: #0066cc;
+  border-radius: 8px;
   font-size: 1.3rem;
-  color: white;
+  color: #ffffff;
 }
 
 .brand-text {
   font-size: 1.3rem;
   font-weight: 800;
   letter-spacing: -0.5px;
+  color: #111827;
 }
 
 .brand-accent {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #0066cc;
 }
 
 .navbar-menu {
   display: flex;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: 1rem;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--text-secondary);
-  font-weight: 500;
+  color: #4b5563;
+  font-weight: 600;
   font-size: 0.95rem;
   padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  color: #0066cc;
+  background: #eff6ff;
 }
 
 .nav-auth {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 10px;
 }
 
 .nav-user {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  padding-left: var(--spacing-md);
-  border-left: 1px solid var(--border);
+  gap: 10px;
+  padding-left: 15px;
+  border-left: 1px solid #e2e8f0;
 }
 
 .user-avatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--gradient-primary);
+  background: #0066cc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: white;
 }
@@ -108,6 +106,7 @@
 .user-name {
   font-weight: 600;
   font-size: 0.9rem;
+  color: #111827;
 }
 
 .user-role {
@@ -122,15 +121,15 @@
   height: 36px;
   border: none;
   border-radius: 50%;
-  background: rgba(239, 68, 68, 0.1);
-  color: var(--danger);
+  background: #fee2e2;
+  color: #ef4444;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.2s ease;
   font-size: 1rem;
 }
 
 .btn-logout:hover {
-  background: rgba(239, 68, 68, 0.2);
+  background: #fca5a5;
   transform: scale(1.05);
 }
 
@@ -138,7 +137,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--text-primary);
+  color: #111827;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -154,13 +153,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(10, 10, 26, 0.98);
+    background: #ffffff;
     flex-direction: column;
     justify-content: flex-start;
-    padding: var(--spacing-xl);
-    gap: var(--spacing-md);
+    padding: 2rem;
+    gap: 1rem;
     transform: translateX(100%);
-    transition: transform var(--transition-normal);
+    transition: transform 0.3s ease;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.05);
   }
 
   .navbar-menu.active {
@@ -171,16 +171,19 @@
     flex-direction: column;
     border-left: none;
     padding-left: 0;
-    padding-top: var(--spacing-md);
-    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
   }
 
   .nav-auth {
     flex-direction: column;
     width: 100%;
+    margin-top: 1rem;
   }
 
   .nav-auth .btn {
     width: 100%;
+    text-align: center;
   }
 }
