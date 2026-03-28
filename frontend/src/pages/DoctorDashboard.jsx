@@ -10,7 +10,7 @@ const DoctorDashboard = () => {
   const [doctorProfile, setDoctorProfile] = useState(null);
   const [appointments, setAppointments] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [stats, setStats] = useState({ total: 0, today: 0, pending: 0, completed: 0 });
+  const [stats, setStats] = useState({ total: 0, today: 0, pending: 0, completed: 0, cancelled: 0 });
 
   useEffect(() => {
     fetchDoctorData();
@@ -31,7 +31,8 @@ const DoctorDashboard = () => {
           total: appts.length,
           today: appts.filter(a => new Date(a.date).toDateString() === today).length,
           pending: appts.filter(a => a.status === 'pending').length,
-          completed: appts.filter(a => a.status === 'completed').length
+          completed: appts.filter(a => a.status === 'completed').length,
+          cancelled: appts.filter(a => a.status === 'cancelled').length
         });
       }
     } catch (error) {
@@ -102,6 +103,13 @@ const DoctorDashboard = () => {
             <div className="stat-content">
               <span className="stat-number">{stats.completed}</span>
               <span className="stat-text">Completed</span>
+            </div>
+          </div>
+          <div className="stat-card-dash glass">
+            <div className="stat-icon" style={{background: 'rgba(239, 68, 68, 0.15)', color: '#ef4444'}}><FiXCircle /></div>
+            <div className="stat-content">
+              <span className="stat-number">{stats.cancelled}</span>
+              <span className="stat-text">Cancelled</span>
             </div>
           </div>
         </div>

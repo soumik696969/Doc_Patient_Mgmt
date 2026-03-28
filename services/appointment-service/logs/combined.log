@@ -10,3 +10,45 @@
 {"level":"info","message":"Appointment booked: 69c2a208bc4d69b4f51ee3b1","service":"appointment-service","timestamp":"2026-03-24T14:39:04.203Z"}
 {"level":"info","message":"Appointment booked: 69c2a24cbc4d69b4f51ee3ca","service":"appointment-service","timestamp":"2026-03-24T14:40:12.598Z"}
 {"level":"info","message":"Appointment booked: 69c2b3e0bc4d69b4f51ee412","service":"appointment-service","timestamp":"2026-03-24T15:55:12.565Z"}
+{"level":"info","message":"Appointment booked: 69c2bb21bc4d69b4f51ee469","service":"appointment-service","timestamp":"2026-03-24T16:26:09.022Z"}
+{"level":"info","message":"Appointment booked: 69c2bb35bc4d69b4f51ee475","service":"appointment-service","timestamp":"2026-03-24T16:26:29.846Z"}
+{"level":"info","message":"Appointment booked: 69c2bd88bc4d69b4f51ee4aa","service":"appointment-service","timestamp":"2026-03-24T16:36:24.862Z"}
+{"level":"info","message":"Appointment booked: 69c2be9fbc4d69b4f51ee4d3","service":"appointment-service","timestamp":"2026-03-24T16:41:03.087Z"}
+{"level":"info","message":"Appointment booked: 69c2bef5bc4d69b4f51ee4e7","service":"appointment-service","timestamp":"2026-03-24T16:42:29.252Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-24T17:24:38.997Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-24T17:24:39.345Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-24T17:24:39.348Z"}
+{"level":"info","message":"Published to notification_events: appointment.booked","service":"appointment-service","timestamp":"2026-03-24T17:26:50.262Z"}
+{"level":"info","message":"Published to appointment_events: appointment.created","service":"appointment-service","timestamp":"2026-03-24T17:26:50.263Z"}
+{"level":"info","message":"Appointment booked: 69c2c95a0a9c858abe3683db","service":"appointment-service","timestamp":"2026-03-24T17:26:50.263Z"}
+{"level":"info","message":"Published to notification_events: appointment.confirmed","service":"appointment-service","timestamp":"2026-03-24T17:30:55.920Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ error: read ECONNRESET","service":"appointment-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-24T17:53:39.232Z"}
+{"level":"warn","message":"RabbitMQ closed. Reconnecting...","service":"appointment-service","timestamp":"2026-03-24T17:53:39.236Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-24T17:53:47.246Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-24T18:38:26.519Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-24T18:38:29.481Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-24T18:38:29.485Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-25T07:08:31.167Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-25T07:08:31.534Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-25T07:08:31.537Z"}
+{"level":"info","message":"Published to notification_events: appointment.completed","service":"appointment-service","timestamp":"2026-03-25T07:35:09.325Z"}
+{"level":"info","message":"Published to notification_events: appointment.booked","service":"appointment-service","timestamp":"2026-03-25T08:00:39.526Z"}
+{"level":"info","message":"Published to appointment_events: appointment.created","service":"appointment-service","timestamp":"2026-03-25T08:00:39.527Z"}
+{"level":"info","message":"Appointment booked: 69c39627d14c01805f6715b2","service":"appointment-service","timestamp":"2026-03-25T08:00:39.527Z"}
+{"level":"info","message":"Published to notification_events: appointment.confirmed","service":"appointment-service","timestamp":"2026-03-25T08:03:24.873Z"}
+{"level":"info","message":"Published to notification_events: appointment.cancelled","service":"appointment-service","timestamp":"2026-03-25T08:06:25.354Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-25T08:09:42.947Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-25T08:09:43.224Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-25T08:09:43.228Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-25T09:05:49.754Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"puffin.rmq2.cloudamqp.com","level":"error","message":"RabbitMQ connection error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com","service":"appointment-service","stack":"Error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)","syscall":"getaddrinfo","timestamp":"2026-03-25T09:05:49.766Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-25T09:05:49.769Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-25T16:45:08.878Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-25T16:45:09.275Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-25T16:45:09.278Z"}
+{"level":"info","message":"Published to notification_events: appointment.booked","service":"appointment-service","timestamp":"2026-03-25T17:33:19.769Z"}
+{"level":"info","message":"Published to appointment_events: appointment.created","service":"appointment-service","timestamp":"2026-03-25T17:33:19.770Z"}
+{"level":"info","message":"Appointment booked: 69c41c5f182ce1db7cb491ca","service":"appointment-service","timestamp":"2026-03-25T17:33:19.771Z"}
+{"level":"info","message":"Appointment Service connected to MongoDB","service":"appointment-service","timestamp":"2026-03-25T18:09:49.610Z"}
+{"level":"info","message":"Appointment Service connected to RabbitMQ","service":"appointment-service","timestamp":"2026-03-25T18:09:49.953Z"}
+{"level":"info","message":"Appointment Service running on port 3003","service":"appointment-service","timestamp":"2026-03-25T18:09:49.956Z"}

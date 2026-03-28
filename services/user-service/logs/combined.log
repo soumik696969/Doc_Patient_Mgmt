@@ -28,3 +28,66 @@
 {"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T15:55:30.618Z"}
 {"level":"info","message":"User logged in: dr.singh@demo.com","service":"user-service","timestamp":"2026-03-24T15:56:21.839Z"}
 {"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T15:57:56.927Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T16:22:30.561Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T16:25:26.261Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T16:26:40.215Z"}
+{"level":"info","message":"User logged in: dr.das@demo.com","service":"user-service","timestamp":"2026-03-24T16:27:00.416Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T16:28:13.450Z"}
+{"level":"info","message":"User logged in: patient2@demo.com","service":"user-service","timestamp":"2026-03-24T16:35:21.299Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-24T16:35:59.662Z"}
+{"level":"info","message":"User logged in: dr.das@demo.com","service":"user-service","timestamp":"2026-03-24T16:39:57.902Z"}
+{"level":"info","message":"User registered: soumikju2004@gmail.com","service":"user-service","timestamp":"2026-03-24T16:40:25.569Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T16:42:48.284Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-24T17:25:42.175Z"}
+{"level":"info","message":"User logged in: dr.reddy@demo.com","service":"user-service","timestamp":"2026-03-24T17:30:48.534Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-24T18:38:30.404Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-24T18:38:30.417Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-24T18:38:30.423Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T07:07:04.247Z"}
+{"code":"ECONNREFUSED","level":"error","message":"RabbitMQ connection error:","service":"user-service","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)","timestamp":"2026-03-25T07:07:04.256Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T07:07:04.260Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T07:15:08.604Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T07:15:08.962Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T07:15:08.965Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:35:02.691Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-25T07:35:02.691Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:35:52.632Z"}
+{"level":"info","message":"User logged in: patient2@demo.com","service":"user-service","timestamp":"2026-03-25T07:35:52.632Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:36:27.174Z"}
+{"level":"info","message":"User logged in: dr.kumar@demo.com","service":"user-service","timestamp":"2026-03-25T07:36:27.174Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:36:48.353Z"}
+{"level":"info","message":"User logged in: patient2@demo.com","service":"user-service","timestamp":"2026-03-25T07:36:48.353Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:37:05.306Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-25T07:37:05.306Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T07:58:43.300Z"}
+{"level":"info","message":"User logged in: patient2@demo.com","service":"user-service","timestamp":"2026-03-25T07:58:43.301Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T08:02:36.766Z"}
+{"level":"info","message":"User logged in: dr.gupta@demo.com","service":"user-service","timestamp":"2026-03-25T08:02:36.766Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T08:09:48.921Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T08:09:50.926Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T08:09:50.930Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T09:06:25.523Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"puffin.rmq2.cloudamqp.com","level":"error","message":"RabbitMQ connection error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com","service":"user-service","stack":"Error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)","syscall":"getaddrinfo","timestamp":"2026-03-25T09:06:25.534Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T09:06:25.538Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T09:09:36.974Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T09:09:39.302Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T09:09:39.307Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ connection error: read ECONNRESET","service":"user-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-25T09:28:24.051Z"}
+{"level":"warn","message":"RabbitMQ connection closed. Reconnecting...","service":"user-service","timestamp":"2026-03-25T09:28:24.055Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"puffin.rmq2.cloudamqp.com","level":"error","message":"RabbitMQ connection error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com","service":"user-service","stack":"Error: getaddrinfo ENOTFOUND puffin.rmq2.cloudamqp.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)","syscall":"getaddrinfo","timestamp":"2026-03-25T09:28:41.112Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T09:37:37.691Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T16:43:56.607Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T16:43:57.097Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T16:43:57.101Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T17:00:53.877Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T17:00:54.121Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T17:00:54.124Z"}
+{"level":"info","message":"User logged in via Google: soumikju2004@gmail.com","service":"user-service","timestamp":"2026-03-25T17:01:37.637Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T17:32:36.343Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-25T17:32:36.344Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-25T17:34:16.001Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-25T17:34:16.002Z"}
+{"level":"info","message":"User logged in via Google: soumikju2004@gmail.com","service":"user-service","timestamp":"2026-03-25T17:35:03.215Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T18:09:50.576Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T18:09:50.993Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T18:09:50.996Z"}

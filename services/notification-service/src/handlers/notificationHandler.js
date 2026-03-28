@@ -1,4 +1,5 @@
 const { logger } = require('../utils/logger');
+const { sendEmail } = require('../utils/emailSender');
 
 // In-memory notification store (in production, use a database)
 const notifications = [];
@@ -11,6 +12,7 @@ const handleNotificationEvent = async (routingKey, data) => {
       notification = {
         id: `notif_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
         userId: data.userId,
+        email: data.email,
         type: 'welcome',
         title: 'Welcome to DoctorConnect!',
         message: `Hello ${data.firstName}! Your account has been successfully created. Start browsing doctors and book your first appointment.`,
@@ -24,6 +26,7 @@ const handleNotificationEvent = async (routingKey, data) => {
       notification = {
         id: `notif_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
         userId: data.patientId,
+        email: data.patientEmail,
         type: 'appointment_booked',
         title: 'Appointment Booked',
         message: `Your appointment with Dr. ${data.doctorName} on ${new Date(data.date).toLocaleDateString()} at ${data.timeSlot?.startTime || 'TBD'} has been booked successfully.`,
@@ -48,6 +51,7 @@ const handleNotificationEvent = async (routingKey, data) => {
       notification = {
         id: `notif_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
         userId: data.patientId,
+        email: data.patientEmail,
         type: 'appointment_confirmed',
         title: 'Appointment Confirmed',
         message: `Your appointment with Dr. ${data.doctorName} on ${new Date(data.date).toLocaleDateString()} has been confirmed.`,
@@ -61,6 +65,7 @@ const handleNotificationEvent = async (routingKey, data) => {
       notification = {
         id: `notif_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
         userId: data.patientId,
+        email: data.patientEmail,
         type: 'appointment_cancelled',
         title: 'Appointment Cancelled',
         message: `Your appointment with Dr. ${data.doctorName} on ${new Date(data.date).toLocaleDateString()} has been cancelled.`,
@@ -74,6 +79,7 @@ const handleNotificationEvent = async (routingKey, data) => {
       notification = {
         id: `notif_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
         userId: data.patientId,
+        email: data.patientEmail,
         type: 'appointment_completed',
         title: 'Appointment Completed',
         message: `Your appointment with Dr. ${data.doctorName} has been marked as completed. View your prescription and notes in your appointment history.`,
@@ -94,6 +100,14 @@ const handleNotificationEvent = async (routingKey, data) => {
     
     // In production: send email, push notification, SMS, etc.
     console.log(`📧 [NOTIFICATION] ${notification.title}: ${notification.message}`);
+    
+    if (notification.email) {
+      await sendEmail(
+        notification.email,
+        notification.title,
+        notification.message
+      );
+    }
   }
 };
 

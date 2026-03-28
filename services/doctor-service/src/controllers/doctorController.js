@@ -46,7 +46,8 @@ exports.getAllDoctors = async (req, res) => {
       }
     };
 
-    // Cache the result
+    // Log the miss and cache the result
+    logger.info('Doctor list fetched from MongoDB database (Cache Miss)');
     await cacheSet(cacheKey, result, CACHE_TTL);
 
     res.json(result);
@@ -85,6 +86,8 @@ exports.searchDoctors = async (req, res) => {
     const doctors = await Doctor.find(filter).sort({ 'rating.average': -1 }).lean();
 
     const result = { doctors, total: doctors.length };
+    
+    logger.info('Doctor search results fetched from MongoDB (Cache Miss)');
     await cacheSet(cacheKey, result, CACHE_TTL);
 
     res.json(result);

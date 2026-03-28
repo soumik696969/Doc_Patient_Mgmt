@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { FiMail, FiLock, FiArrowRight } from 'react-icons/fi';
+import { GoogleLogin } from '@react-oauth/google';
 import toast from 'react-hot-toast';
 import './Auth.css';
 
 const Login = () => {
-  const { login } = useAuth();
+  const { login, googleLogin } = useAuth();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [loading, setLoading] = useState(false);
@@ -25,6 +26,20 @@ const Login = () => {
     }
   };
 
+  const handleGoogleSuccess = async (credentialResponse) => {
+    setLoading(true);
+    try {
+      const data = await googleLogin(credentialResponse.credential);
+      toast.success(`Welcome, ${data.user.firstName}!`);
+      navigate(data.user.role === 'doctor' ? '/doctor-dashboard' : '/dashboard');
+    } catch (error) {
+      toast.error('Google Sign In failed. Ensure you ran the npm installs.');
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="auth-page">
       <div className="auth-bg">
@@ -38,6 +53,19 @@ const Login = () => {
             <p>Sign in to continue your health journey</p>
           </div>
           
+          {/* New Google Authentication Button */}
+          <div style={{ marginTop: '10px', marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+            <GoogleLogin
+              onSuccess={handleGoogleSuccess}
+              onError={() => toast.error('Google authentication failed.')}
+              useOneTap
+            />
+          </div>
+
+          <div style={{ textAlign: 'center', margin: '15px 0', color: '#6B7280', fontSize: '13px', fontWeight: 'bold' }}>
+            OR SIGN IN WITH EMAIL
+          </div>
+
           <form onSubmit={handleSubmit} className="auth-form">
             <div className="form-group">
               <label htmlFor="email">Email Address</label>

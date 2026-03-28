@@ -21,4 +21,7 @@ router.post('/login', [
   validate
 ], authController.login);
 
+// Google Sign-In
+router.post('/google', authController.googleLogin);
+
 module.exports = router;
