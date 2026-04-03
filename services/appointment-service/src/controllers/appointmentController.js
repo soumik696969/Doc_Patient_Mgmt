@@ -273,6 +273,13 @@ exports.getAvailableSlots = async (req, res) => {
 
     const bookedSlots = bookedAppointments.map(a => a.timeSlot.startTime);
 
+    // Check if the requested date is today
+    const now = new Date();
+    const requestedDate = new Date(date);
+    const isToday = now.toISOString().split('T')[0] === requestedDate.toISOString().split('T')[0];
+    const currentHour = now.getHours();
+    const currentMin = now.getMinutes();
+
     // Generate all possible slots (30-minute intervals from 9:00 to 17:00)
     const allSlots = [];
     for (let hour = 9; hour < 17; hour++) {
@@ -281,7 +288,10 @@ exports.getAvailableSlots = async (req, res) => {
         const endHour = min === 30 ? hour + 1 : hour;
         const endMin = min === 30 ? 0 : 30;
         const endTime = `${endHour.toString().padStart(2, '0')}:${endMin.toString().padStart(2, '0')}`;
-        allSlots.push({ startTime, endTime, isAvailable: !bookedSlots.includes(startTime) });
+
+        // If today, mark past slots as unavailable
+        const isPast = isToday && (hour < currentHour || (hour === currentHour && min <= currentMin));
+        allSlots.push({ startTime, endTime, isAvailable: !bookedSlots.includes(startTime) && !isPast });
       }
     }
 

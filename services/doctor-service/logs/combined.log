@@ -186,3 +186,18 @@
 {"level":"info","message":"Doctor Service connected to Redis","service":"doctor-service","timestamp":"2026-03-25T18:09:46.027Z"}
 {"level":"info","message":"Doctor Service connected to RabbitMQ","service":"doctor-service","timestamp":"2026-03-25T18:09:47.423Z"}
 {"level":"info","message":"Doctor Service running on port 3002","service":"doctor-service","timestamp":"2026-03-25T18:09:47.426Z"}
+{"level":"info","message":"Doctor Service connected to MongoDB","service":"doctor-service","timestamp":"2026-03-28T07:57:25.652Z"}
+{"level":"info","message":"Doctor Service connected to Redis","service":"doctor-service","timestamp":"2026-03-28T07:57:25.773Z"}
+{"level":"info","message":"Doctor Service connected to RabbitMQ","service":"doctor-service","timestamp":"2026-03-28T07:57:27.060Z"}
+{"level":"info","message":"Doctor Service running on port 3002","service":"doctor-service","timestamp":"2026-03-28T07:57:27.062Z"}
+{"level":"info","message":"Doctor list fetched from MongoDB database (Cache Miss)","service":"doctor-service","timestamp":"2026-03-28T07:59:28.699Z"}
+{"level":"info","message":"Doctor list served from cache","service":"doctor-service","timestamp":"2026-03-28T07:59:29.150Z"}
+{"level":"info","message":"Doctor list fetched from MongoDB database (Cache Miss)","service":"doctor-service","timestamp":"2026-03-28T08:30:46.668Z"}
+{"level":"info","message":"Doctor list served from cache","service":"doctor-service","timestamp":"2026-03-28T08:30:47.143Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ error: read ECONNRESET","service":"doctor-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-28T08:33:40.892Z"}
+{"level":"warn","message":"RabbitMQ closed. Reconnecting...","service":"doctor-service","timestamp":"2026-03-28T08:33:40.956Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ connection error: read ECONNRESET","service":"doctor-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-28T08:34:28.398Z"}
+{"level":"info","message":"Doctor Service connected to MongoDB","service":"doctor-service","timestamp":"2026-03-28T09:16:37.803Z"}
+{"level":"info","message":"Doctor Service connected to Redis","service":"doctor-service","timestamp":"2026-03-28T09:16:37.903Z"}
+{"level":"info","message":"Doctor Service connected to RabbitMQ","service":"doctor-service","timestamp":"2026-03-28T09:16:39.255Z"}
+{"level":"info","message":"Doctor Service running on port 3002","service":"doctor-service","timestamp":"2026-03-28T09:16:39.261Z"}

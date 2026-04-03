@@ -91,3 +91,17 @@
 {"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-25T18:09:50.576Z"}
 {"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-25T18:09:50.993Z"}
 {"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-25T18:09:50.996Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-28T07:57:06.459Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-28T07:57:06.785Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-28T07:57:06.789Z"}
+{"level":"info","message":"User logged in via Google: soumikju2004@gmail.com","service":"user-service","timestamp":"2026-03-28T07:59:08.613Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-28T08:12:12.187Z"}
+{"level":"info","message":"User logged in: dr.gupta@demo.com","service":"user-service","timestamp":"2026-03-28T08:12:12.188Z"}
+{"level":"info","message":"Message published to user_events with key user.login","service":"user-service","timestamp":"2026-03-28T08:30:24.565Z"}
+{"level":"info","message":"User logged in: patient1@demo.com","service":"user-service","timestamp":"2026-03-28T08:30:24.566Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ connection error: read ECONNRESET","service":"user-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-28T08:33:40.891Z"}
+{"level":"warn","message":"RabbitMQ connection closed. Reconnecting...","service":"user-service","timestamp":"2026-03-28T08:33:40.950Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"RabbitMQ connection error: read ECONNRESET","service":"user-service","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)","syscall":"read","timestamp":"2026-03-28T08:34:28.398Z"}
+{"level":"info","message":"User Service connected to MongoDB","service":"user-service","timestamp":"2026-03-28T09:16:38.082Z"}
+{"level":"info","message":"User Service connected to RabbitMQ","service":"user-service","timestamp":"2026-03-28T09:16:38.374Z"}
+{"level":"info","message":"User Service running on port 3001","service":"user-service","timestamp":"2026-03-28T09:16:38.379Z"}
